@@ -138,7 +138,7 @@ class _SearchDialogState<T> extends State<SearchDialog> {
               .where((element) => element
                   .toString()
                   .toLowerCase()
-                  .contains(textController.text.toLowerCase()))
+                  .contains(textController.text.trim().toLowerCase()))
               .toList();
         }
       });
